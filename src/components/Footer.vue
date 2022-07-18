@@ -3,7 +3,6 @@
   <h3>Join our Teams of Writers</h3>
   <p>On dasdas, writers earn a living doing what they love.</p>
   <p>Getting Started is easy. Just Pay a one time <span>$25 fee </span>and everything is ready to go.</p>
-  <!-- <router-link to="/about"><button>JOIN US </button></router-link> -->
   <Button></Button>
  </footer>
 </template>
@@ -36,7 +35,6 @@ footer {
  flex-direction: column;
  padding: 3rem 0;
  text-align: center;
- /* background-color: rgb(230, 230, 230); */
 }
 
 footer h3{

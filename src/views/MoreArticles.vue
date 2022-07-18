@@ -1,9 +1,5 @@
 <template>
-  <!-- <h1>
-  More Articles
- </h1> -->
   <div class="testimonial-grid">
-    <!-- <section> -->
     <article class="testimonial">
       <img src='../assets/image/minib1.png' alt="">
       <article>
@@ -21,8 +17,7 @@
         <section class="right_sub_section">
           <p>3 Min Read</p>
           <router-link class="arrow_icon_con" to="/singleblogpage">
-            <p>Read Full</p>
-            <!-- <p>Read Full</p> -->
+            <p>Read Full...</p>
           </router-link>
         </section>
       </article>
@@ -45,8 +40,7 @@
         <section class="right_sub_section">
           <p>8 Min Read</p>
           <router-link class="arrow_icon_con" to="/singleblogpage2">
-            <p>Read Full</p>
-            <!-- <p>Read Full</p> -->
+            <p>Read Full...</p>
           </router-link>
         </section>
       </article>
@@ -69,26 +63,21 @@
         <section class="right_sub_section">
           <p>10 Min Read</p>
           <router-link class="arrow_icon_con" to="/singleblogpage3">
-            <p>Read Full</p>
-            <!-- <p>Read Full</p> -->
+            <p>Read Full...</p>
           </router-link>
         </section>
       </article>
     </article>
-    <!-- </section> -->
   </div>
 </template>
 
 <script>
-// import MoreArticle from './MoreArticle'
 
 export default {
  name: "MoreArticles",
  props: {
-  // showAddTask: Boolean,
  },
  components: {
-  // MoreArticle,
  },
 }
 </script>
@@ -96,16 +85,18 @@ export default {
 
 
 <style scoped>
+
 .testimonial-grid{
  display: flex;
  gap: 5rem;
  flex-wrap: wrap;
 }
 
-/* .testimonial-grid > * {
-flex-basis: 100%;
-} */
-
+.arrow_icon_con {
+  display: flex;
+  text-decoration: none;
+  color: #1473e6;
+}
 .testimonial{
  box-shadow: 0em 0em .2em rgba(67, 67, 67, 0.219);
   padding: 5px;
@@ -147,28 +138,6 @@ flex-basis: 100%;
  cursor: pointer;
 }
 
-
-
-
-
-
-/* body {
- background-color: white;
- color: rgb(105, 105, 105);
- margin: 2rem 3rem;
-} */
-
- .blog_con{
-  /* margin: 2rem 3rem;
-  color: rgb(105, 105, 105);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-   width: 23.6rem;
-   margin-top: 4rem;
-   */
-  }
   
   .blogs_container {
    margin: 4rem 3rem;
@@ -178,12 +147,10 @@ flex-basis: 100%;
    border-radius: 6px;
    margin-bottom: 4rem;
    height: 25rem;
-   /* width: 23.6rem; */
   }
   
   .blogs_container img {
    object-fit: contain;
-   /* width: 23.6rem; */
   }
   
   @media (min-width: 60em) {
@@ -193,8 +160,5 @@ flex-basis: 100%;
   }
   
   @media (min-width: 80em) {
-   /* .testimonial-grid {
-       grid-template-columns: repeat(3, 1fr);
-      } */
   }
 </style>

@@ -5,8 +5,6 @@
     <br>
     <br>
     <BodyContainer @btn-click="$emit('show-blog-page')" :blogList="blogList" />
-    <Button></Button>
-    <!-- <BodyContainer :blogList="blogList" /> -->
   </div>
 </template>
 

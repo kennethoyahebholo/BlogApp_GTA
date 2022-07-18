@@ -48,7 +48,6 @@ import BodyContainer from '../components/BodyContainer'
 export default {
  name: "SingleBlogPage2",
  props: {
-  // showAddTask: Boolean,
  },
  components: {
   MoreArticles,
@@ -62,7 +61,6 @@ export default {
 
 <style scoped>
 main {
- /* background-color: aqua; */
  margin: 4rem .1rem;
  color: rgb(66, 66, 66);
 }
@@ -84,7 +82,6 @@ main p {
  display: flex;
  align-items: center;
  justify-content: center;
- /* background-color: aqua; */
  margin: 2rem 0;
 }
 
@@ -93,8 +90,6 @@ main img {
  object-fit: contain;
  display: flex;
  align-self: center;
-
- /* padding: 0 10rem; */
 }
 
 @media (min-width: 50em) {
@@ -104,9 +99,6 @@ main img {
 }
 
 @media (min-width: 60em) {
- /* .testimonial-grid {
-         grid-template-columns: repeat(2, 1fr);
-        } */
 }
 
 @media (min-width: 80em) {

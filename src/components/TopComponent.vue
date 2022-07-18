@@ -21,43 +21,28 @@
         <section class="right_sub_section">
           <p>3 Min Read</p>
           <span>
-            <p>Read Full</p>
-            <!-- <img src="../assets/image/Vectorarr1.png" alt=""> -->
+            <router-link class="arrow_icon_con" to="/singleblogpage">
+              <p>Read Full...</p>
+            </router-link>
           </span>
         </section>
       </section>
     </div>
-    <!-- <BlogsCon /> -->
   </main>
-  <!-- <div>
-    <BlogList :blogList="blogList"></BlogList>
-    <p>hello world</p>
-  </div> -->
-  <!-- <div 
- :key="task.id"
-  v-for="task in tasks"
-  >
-  <Task @toggle-reminder="$emit('toggle-reminder', task.id)" @delete-task="$emit('delete-task', task.id)" :task="task"/> 
- </div> -->
 </template>
 
 
 <script>
-// import Task from './Task'
-// import BlogList from './BlogList'
 
 
 export default {
  name: 'TasksT',
  props: {
-  // tasks: Array,
   blogLists: Array,
  },
  components: {
-  // Task,
-  // BlogList,
  },
- emits: ['delete-task', 'toggle-reminder']
+//  emits: ['delete-task', 'toggle-reminder']
 }
 
 </script>
@@ -66,6 +51,11 @@ export default {
 <style scoped>
 
 
+.arrow_icon_con {
+  display: flex;
+  text-decoration: none;
+  color: #1473e6;
+}
 
 
 
@@ -81,22 +71,16 @@ export default {
 
 .top_container{
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: column;
   margin-bottom: 3rem;
-  /* background-color: crimson; */
-  /* gap: 1.5rem; */
 }
 
 .top_container > *:nth-child(1) {
   flex: 1 1 20%;
-  /* min-width: 15ch; */
-  /* background-color: aquamarine; */
 }
 
 .top_container>*:nth-child(2) {
 flex: 1 1 80%;
-/* background-color: blue; */
 padding: 10px;
 }
 
@@ -104,7 +88,6 @@ padding: 10px;
   max-width: 24.1rem;
 }
 .testimonial{
-  /* width: 24rem; */
   flex: 1 1 70%;
 }
 

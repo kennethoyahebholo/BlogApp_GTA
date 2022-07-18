@@ -42,7 +42,7 @@ export default {
 
 body{
   font-family: 'Poppons', sans-serif;
-  margin: .5rem 3rem;
+  margin: .5rem 2rem;
 }
 
 .container {
@@ -51,13 +51,11 @@ body{
 
 
 .btn{
-
   background-color: rgb(23, 23, 23);
   padding: .4rem 2rem;
   font-size: 10px;
   color: white;
   margin-top: 20px;
-  /* display: inline-block; */
   border: none;
   cursor: pointer;
   text-decoration: none;

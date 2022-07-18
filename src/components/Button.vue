@@ -1,19 +1,8 @@
 <!-- reusable button compnent -->
-
-
-
 <template>
  <button @click="makePayment()" :style="{background: color}" class="btn">{{ text }}</button>
 </template>
 
- <!-- <template>
-  <form action="#" @submit.prevent="makePayment">
-   <div class="btn-wrapper">
-    <input type="number" v-model.number="amount" />
-    <button type="submit">Make Payment</button>
-   </div>
-  </form>
- </template> -->
 
 
 <script>
@@ -32,8 +21,6 @@ export default {
  },
  methods: {
   onClick(){
-   // this.$emit('btn-click')
-   console.log('heloooooooooo')
   },
 
   makePayment() {
@@ -41,11 +28,19 @@ export default {
    useFlutterwave({
     amount: 25,//amount
     callback(data){
-     //  TODO: handle callbacks
+      // TODO: handle callbacks
+      if(data){
+         setTimeout(()=>{
+          alert("successful")          
+          router.push("/")
+         },10000)
+      }else{
+       alert("error")
+      }
     },
     country: "NG",
     currency: "USD",
-    customer: { email: 'example@me.com', name: 'kenneth', phone_number: '+2347086967055' },
+    customer: { email: 'testing@me.com', name: 'kenneth', phone_number: '+2347086967055' },
     customizations: { description: "Pay with myBlogApp", logo: "", title: "BlogApp" },
     meta: {
      user_id: 1,

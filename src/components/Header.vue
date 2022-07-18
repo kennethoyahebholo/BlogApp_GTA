@@ -1,16 +1,16 @@
 <template>
  <header>
   <router-link to="/">
-   <div class="header_logo">
+   <section class="header_logo">
 
     <section class="logo_text">
      <h5>{{ title }}</h5>
     </section>
 
 
-   </div>
+   </section>
   </router-link>
-  <div class="icon_con">
+  <section class="icon_con">
    <span><img src='../assets/image/Vectortwiter.png' alt="" /></span>
    <p>.</p>
    <img src='../assets/image/Vectorbas1.png' alt="" />
@@ -18,15 +18,11 @@
    <img src='../assets/image/Vectorfig.png' alt="" />
    <p>.</p>
    <img src='../assets/image/Vectorgithub.png' alt="" />
-  </div>
-  <!-- <Button v-show="homePage" @btn-click="$emit('toggle-add-task')" :text="showAddTask? 'Close' :  'Add Task'"
-   :color="showAddTask? 'red' :  'green'">
-  </Button> -->
+  </section>
  </header>
 </template>
 
 <script>
-// import twitterIcon from '../assets/Vectortwiter.png'
 import Button from './Button'
 
 export default {
@@ -63,10 +59,8 @@ export default {
 header {
  display: flex;
  justify-content: space-between;
- /* background-color: rgb(228, 228, 228); */
  align-items: center;
  margin-bottom: 20px;
- /* padding: .5rem 3rem; */
 }
 
 .header_logo {
